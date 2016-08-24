@@ -1,0 +1,37 @@
+{
+  "name": "screeps-module-manager",
+  "version": "0.0.1",
+  "description": "Automatically transform and synchronize your screeps modules",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel -d lib src",
+    "watch:build": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/screepers/screeps-module-manager.git"
+  },
+  "keywords": [
+    "screeps",
+    "transform",
+    "upload"
+  ],
+  "author": "Adam Snodgrass <overra+github@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/screepers/screeps-module-manager/issues"
+  },
+  "homepage": "https://github.com/screepers/screeps-module-manager#readme",
+  "dependencies": {
+    "chokidar": "^1.6.0",
+    "fs-promise": "^0.5.0",
+    "just-promiseify": "^1.1.1",
+    "request-promise-native": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015-auto": "^1.1.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
+}
